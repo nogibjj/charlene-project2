@@ -9,10 +9,10 @@ echo "..."
 echo 
 echo "Now, we only want to display sorted result of song name, artist, weeks on board"
 echo "..."
-i=1
+i=0
 while IFS=, read -r col1 col2 col3 col4 col5 col6 col7
 do  
-    if [ $i -eq 1 ] 
+    if [ $i -eq 0 ] 
     then
         echo "Song name | Artist | Weeks on Board"
     else
